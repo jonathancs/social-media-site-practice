@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "watch": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/jonathancs/social-media-site-practice/issues"
   },
-  "homepage": "https://github.com/jonathancs/social-media-site-practice#readme"
+  "homepage": "https://github.com/jonathancs/social-media-site-practice#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  }
 }
