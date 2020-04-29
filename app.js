@@ -11,3 +11,15 @@ app.use('/', router)
 
 app.listen(3000)
 
+
+
+/*
+
+esse curso mostra 
+
+o que é um router
+o que é um controller
+o que é um model
+
+
+*/
