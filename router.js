@@ -1,9 +1,11 @@
 const express = require('express')
 const router = express.Router()
+const userController = require('./controllers/userController')
 
-router.get('/', function (req, res) {
-    res.render('home-guest')
-})
+router.get('/', userController.home)
+router.post('/register', userController.register)
 
 
 module.exports = router
+
+// um router não deve conter as funções de direcionamento, apenas chamar as funcoes existentes no controller.
