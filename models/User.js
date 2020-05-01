@@ -1,15 +1,15 @@
 const usersCollection = require('../db').collection("users")
-const validator = require('validator')
+const validator = require("validator")
 
 
 let User = function (data) {
-    this.data = data
-    this.errors = []
+    this.data = data;
+    this.errors = [];
 }
 
-User.prototype.cleanUp = function () {
+User.prototype.cleanUp = function() {
     if (typeof(this.data.username) != "string") {this.data.username = ""}
-    if (typeof(this.data.email) != "string") {this.data.username = "email"}
+    if (typeof(this.data.email) != "string") {this.data.email = ""}
     if (typeof(this.data.password) != "string") {this.data.password = ""}
 
     // get rid of anything odd
@@ -29,6 +29,17 @@ User.prototype.validate = function () {
     if (this.data.password.length > 100) {this.errors.push("password cannot exceed 100 characters")}
     if (this.data.password.username > 0 && this.data.username.length < 3) {this.errors.push("Username must be at least 3 characters")}
     if (this.data.password.username < 100) {this.errors.push("username cannot exceed 100 characters")}
+}
+
+User.prototype.login = function(callback) {
+    this.cleanUp()
+    usersCollection.findOne({username: this.data.username}, (err, attemptedUser) => {
+        if (attemptedUser && attemptedUser.password == this.data.password) {
+            callback("congraaaaaaats")
+        } else {
+            callback("invaliiiiiiiiiddd")
+        }
+    })
 }
 
 User.prototype.register = function () {
