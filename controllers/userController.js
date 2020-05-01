@@ -1,7 +1,10 @@
 const User = require('../models/User')
 
-exports.login = function () {
-
+exports.login = function (req, res) {
+    let user = new User(req.body)
+    user.login(function (result) {  //provide a function as ARGUMENT porque não são sabemos quanto vai demorar
+        res.send(result)
+    }) // when to send back the response. WHEN ?   traditionally: callback;  modern: promises    
 }
 
 exports.logout = function () {
