@@ -42,7 +42,7 @@ exports.register = function (req, res) {
 
 exports.home = function (req, res) {
     if (req.session.browserUser) {
-        res.send("welcome to the actual appppp")
+        res.render('home-dashboard', {username: req.session.browserUser.username})
     } else {
         res.render('home-guest')
     }
