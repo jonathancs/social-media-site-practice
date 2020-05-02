@@ -14,6 +14,7 @@ exports.login = function (req, res) {
        ou logando na vigésima vez */
 
     user.login().then(function (result) {
+        req.session.browserUser = {favColor: "blue", username: user.data.username}
         res.send(result)
     }).catch(function (error) {
         res.send(error)
@@ -40,6 +41,10 @@ exports.register = function (req, res) {
 }
 
 exports.home = function (req, res) {
-    res.render('home-guest')
+    if (req.session.browserUser) {
+        res.send("welcome to the actual appppp")
+    } else {
+        res.render('home-guest')
+    }
 }
 
