@@ -1,17 +1,22 @@
+git add ".gitignore"
+git commit -m "18. How Can We Identify or Trust a Request"
 
+git add "app.js"
+git commit -m "18. How Can We Identify or Trust a Request"
 
-
+git add "controllers/userController.js"
+git commit -m "18. How Can We Identify or Trust a Request"
 
 git add "zGit"
-git commit -m "17. Hashing User Passwords"
+git commit -m "18. How Can We Identify or Trust a Request"
 
 git add "models/User.js"
-git commit -m "17. Hashing User Passwords"
+git commit -m "18. How Can We Identify or Trust a Request"
 
 git add "package-lock.json"
-git commit -m "17. Hashing User Passwords"
+git commit -m "18. How Can We Identify or Trust a Request"
 
 git add "package.json"
-git commit -m "17. Hashing User Passwords"
+git commit -m "18. How Can We Identify or Trust a Request"
 
 git push
