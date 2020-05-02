@@ -31,14 +31,23 @@ User.prototype.validate = function () {
     if (this.data.password.username < 100) {this.errors.push("username cannot exceed 100 characters")}
 }
 
-User.prototype.login = function(callback) {
-    this.cleanUp()
-    usersCollection.findOne({username: this.data.username}, (err, attemptedUser) => {
-        if (attemptedUser && attemptedUser.password == this.data.password) {
-            callback("congraaaaaaats")
-        } else {
-            callback("invaliiiiiiiiiddd")
-        }
+User.prototype.login = function () {
+    return new Promise((resolve, reject) => { 
+        /*an anonymous function behave directing the THIS keyword 
+        (on this.data.username) to the global scope.
+
+        so we must change the function syntax to arrow function */
+        
+        this.cleanUp()
+        usersCollection.findOne({ username: this.data.username }).then((attemptedUser) => {
+            if (attemptedUser && attemptedUser.password == this.data.password) {
+                resolve("congraaaaaaats")
+            } else {
+                reject("invaliiiiiiiiiddd")
+            }
+        }).catch(function () {
+            reject("please try again later, there happened an unnexpected error on our side")
+        })
     })
 }
 
