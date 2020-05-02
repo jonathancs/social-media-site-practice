@@ -23,6 +23,3 @@ git add "package.json"
 git commit -m "20. Understanding Sessions"
 
 git push
-
-db.js
-models/User.js
