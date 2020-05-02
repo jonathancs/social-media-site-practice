@@ -1,0 +1,17 @@
+
+
+
+
+git add "zGit"
+git commit -m "17. Hashing User Passwords"
+
+git add "models/User.js"
+git commit -m "17. Hashing User Passwords"
+
+git add "package-lock.json"
+git commit -m "17. Hashing User Passwords"
+
+git add "package.json"
+git commit -m "17. Hashing User Passwords"
+
+git push
