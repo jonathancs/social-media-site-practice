@@ -1,8 +1,13 @@
 
-let comentarioGit = "Script para automatizar commits"
+let comentarioGit = "21. Letting Users Logout"
+
 
 let arquivosAlterados = [
+    "controllers/userController.js",
+    "router.js",
+    "views/home-dashboard.ejs",
     "zGit.js"
+
 ]
 
 if (arquivosAlterados.length == 1) {
