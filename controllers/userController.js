@@ -15,7 +15,9 @@ exports.login = function (req, res) {
 
     user.login().then(function (result) {
         req.session.browserUser = {favColor: "blue", username: user.data.username}
-        res.send(result)
+        req.session.save(function () {
+            res.redirect('/')
+        })
     }).catch(function (error) {
         res.send(error)
     })
@@ -26,8 +28,10 @@ exports.login = function (req, res) {
         .then().catch() */
 }
 
-exports.logout = function () {
-
+exports.logout = function (req, res) {
+    req.session.destroy(function () {
+        res.redirect('/')
+    })
 }
 
 exports.register = function (req, res) {
