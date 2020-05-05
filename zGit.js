@@ -1,15 +1,14 @@
-
-let comentarioGit = "22. Adding Flash Messages"
+let comentarioGit = "configurando committer"
 
 let arquivosAlterados = [
-    "controllers/userController.js",
-    "router.js",
-    "views/home-dashboard.ejs",
-    "zGit.js",
-    "app.js",
-    "package-lock.json",
-    "package.json",
-    "views/home-guest.ejs"
+    // "controllers/userController.js",
+    // "router.js",
+    // "views/home-dashboard.ejs",
+    "zGit.js"
+    // "app.js",
+    // "package-lock.json",
+    // "package.json",
+    // "views/home-guest.ejs"
 
 ]
 
@@ -118,12 +117,6 @@ if (arquivosAlterados.length == 1) {
     arquivosAlterados[12] = 'git add "' + arquivosAlterados[12] + '"';
     arquivosAlterados[14] = 'git add "' + arquivosAlterados[14] + '"';
 }
-
-// for (var i = 0; i < arquivosAlterados.length; i++) {
-//     if (i % 2 === 0) { // index is even
-//         arquivosAlterados[i] = 'git add "' + arquivosAlterados[i] + '"';
-//     }
-// }
 
 for (let i = 0; i < arquivosAlterados.length; i++) {
     console.log(arquivosAlterados[i])
