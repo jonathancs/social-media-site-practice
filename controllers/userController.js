@@ -18,8 +18,11 @@ exports.login = function (req, res) {
         req.session.save(function () {
             res.redirect('/')
         })
-    }).catch(function (error) {
-        res.send(error)
+    }).catch(function (e) {
+        req.flash('errors', e)
+        req.session.save(function () {
+            res.redirect('/')
+        })
     })
     /* só que lá do /User, o método 'login' 
     vai nos retornar uma promessa,
@@ -48,7 +51,7 @@ exports.home = function (req, res) {
     if (req.session.browserUser) {
         res.render('home-dashboard', {username: req.session.browserUser.username})
     } else {
-        res.render('home-guest')
+        res.render('home-guest', {errors: req.flash('errors')})
     }
 }
 
