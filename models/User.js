@@ -35,13 +35,13 @@ User.prototype.validate = function () {
         // only if username is valid, check to see if its already taken
         if (this.data.username.length > 2 && this.data.username.length < 31 && validator.isAlphanumeric(this.data.username)) {
             let usernameExists = await usersCollection.findOne({username: this.data.username})
-            if (usernameExists) {this.data.errors.push("this username is already takeeeennn")}
+            if (usernameExists) {this.errors.push("this username is already takeeeennn")}
         }
     
         // only if email is valid, check to see if its already taken
         if (validator.isEmail(this.data.email)) {
             let emailExists = await usersCollection.findOne({email: this.data.email})
-            if (emailExists) {this.data.errors.push("this username is already takeeeennn")}
+            if (emailExists) {this.errors.push("this email is already takeeeennn")}
         }
         resolve()
     })
@@ -80,9 +80,8 @@ User.prototype.register = function () {
             await usersCollection.insertOne(this.data)
             resolve()
         } else {
-            reject(this.data.errors)
+            reject(this.errors)
         }
-
     })
 }
 
