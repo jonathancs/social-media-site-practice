@@ -40,7 +40,7 @@ exports.logout = function (req, res) {
 exports.register = function (req, res) {
     let user = new User(req.body)
     user.register().then(() => {
-        req.session.user = {username: username.data.username}
+        req.session.user = {username: user.data.username}
         req.session.save(function () {
             res.redirect('/')
         })
