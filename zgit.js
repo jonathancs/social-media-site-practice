@@ -1,3 +1,5 @@
+/*
+
 let comentarioGit = "implementando committer"
 
 let arquivosAlterados = [
@@ -49,16 +51,25 @@ for (let i = 0; i < arquivosAlterados.length; i++) {
     console.log(arquivosAlterados[i])
 }
 
-// git add "controllers/userController.js"
-// git commit -m  "25. Adding User Profile Photos"
-// git add "models/User.js"
-// git commit -m  "25. Adding User Profile Photos"
-// git add "package-lock.json"
-// git commit -m  "25. Adding User Profile Photos"
-// git add "package.json"
-// git commit -m  "25. Adding User Profile Photos"
-// git add "views/home-dashboard.ejs"
-// git commit -m  "25. Adding User Profile Photos"
-// git add "zgit.js"
-// git commit -m  "25. Adding User Profile Photos"
-// git push
+*/
+
+
+
+
+git add "app.js"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "controllers/postController.js"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "controllers/userController.js"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "views/create-post.ejs"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "views/home-dashboard.ejs"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "views/home-guest.ejs"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "views/includes/header.ejs"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+git add "zgit.js"
+git commit -m "2. Letting Users Create Posts (Part 2) - getting rid of duplicated code on views"
+        views/includes/footer.ejs
