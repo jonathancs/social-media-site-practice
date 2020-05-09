@@ -1,7 +1,9 @@
 let comentarioGit = "implementando committer"
 
 let arquivosAlterados = [
-    "zgit.js"
+    "zgit.js",
+    ".gitignore",
+    "committer"
 ]
 
 let contagem = arquivosAlterados.length
