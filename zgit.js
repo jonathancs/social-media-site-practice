@@ -1,9 +1,11 @@
-let comentarioGit = "implementando committer"
+let comentarioGit = "3. Post Model (Part 1) - validando Posts e inserindo no BD"
 
 let arquivosAlterados = [
-    "zgit.js",
-    ".gitignore",
-    "committer"
+    "controllers/postController.js",
+    "router.js",
+    "views/create-post.ejs",
+    "models/Post.js",
+    "zgit.js"
 ]
 
 let contagem = arquivosAlterados.length
