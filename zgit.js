@@ -1,12 +1,10 @@
-let comentarioGit = "3. Post Model (Part 2) - identificando o usuário na postagem que vai para o BD"
-
-
-
+let comentarioGit = "5. Viewing a Post (Part 1)"
 
 let arquivosAlterados = [
     "controllers/userController.js",
     "controllers/postController.js",
     "router.js",
+    "views/includes/header.ejs",
     "views/create-post.ejs",
     "models/Post.js",
     "zgit.js"
