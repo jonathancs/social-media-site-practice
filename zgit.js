@@ -1,11 +1,12 @@
 let comentarioGit = "5. Viewing a Post (Part 1)"
 
 let arquivosAlterados = [
-    "controllers/userController.js",
+    // "controllers/userController.js",
+    // "router.js",
+    // "views/includes/header.ejs",
+    // "views/create-post.ejs",
+    // "views/single-post-screen.ejs",
     "controllers/postController.js",
-    "router.js",
-    "views/includes/header.ejs",
-    "views/create-post.ejs",
     "models/Post.js",
     "zgit.js"
 ]
