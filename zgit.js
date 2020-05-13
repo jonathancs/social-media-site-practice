@@ -1,14 +1,14 @@
-let comentarioGit = "5. Viewing a Post (Part 2) - exibindo posts "
+let comentarioGit = "7. Performing a Lookup in MongoDB (Part 1)"
 
 let arquivosAlterados = [
     // "controllers/userController.js",
     // "router.js",
     // "views/includes/header.ejs",
-    // "models/Post.js",
-    "views/create-post.ejs",
-    "views/single-post-screen.ejs",
-    "controllers/postController.js",
-    "views/404.ejs",
+    // "views/create-post.ejs",
+    // "views/single-post-screen.ejs",
+    // "controllers/postController.js",
+    // "views/404.ejs",
+    "models/Post.js",
     "zgit.js"
 ]
 
