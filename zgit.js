@@ -1,13 +1,15 @@
-let comentarioGit = "7. Performing a Lookup in MongoDB (Part 1)"
+let comentarioGit = "9. User Profile Screen - incomplete, troubleshooting"
 
 let arquivosAlterados = [
     // "controllers/userController.js",
-    // "router.js",
+    "router.js",
     // "views/includes/header.ejs",
     // "views/create-post.ejs",
     // "views/single-post-screen.ejs",
     // "controllers/postController.js",
     // "views/404.ejs",
+    "package-lock.json",
+    "package.json",
     "models/Post.js",
     "zgit.js"
 ]
