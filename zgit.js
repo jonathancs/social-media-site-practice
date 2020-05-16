@@ -1,16 +1,17 @@
-let comentarioGit = "9. User Profile Screen - incomplete, troubleshooting"
+let comentarioGit = "9. Dynamic User Profile screen"
 
 let arquivosAlterados = [
-    // "controllers/userController.js",
-    "router.js",
     // "views/includes/header.ejs",
     // "views/create-post.ejs",
     // "views/single-post-screen.ejs",
     // "controllers/postController.js",
     // "views/404.ejs",
-    "package-lock.json",
-    "package.json",
-    "models/Post.js",
+    "models/User.js",
+    "controllers/userController.js",
+    "router.js",
+    // "package-lock.json",
+    // "package.json",
+    // "models/Post.js",
     "zgit.js"
 ]
 
