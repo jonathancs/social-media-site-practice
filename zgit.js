@@ -1,17 +1,17 @@
-let comentarioGit = "9. Dynamic User Profile screen"
+let comentarioGit = "8. Performing a Lookup in MongoDB (Part 2) - concluindo parte que havia esquecido"
 
 let arquivosAlterados = [
     // "views/includes/header.ejs",
     // "views/create-post.ejs",
-    // "views/single-post-screen.ejs",
     // "controllers/postController.js",
     // "views/404.ejs",
-    "models/User.js",
-    "controllers/userController.js",
-    "router.js",
     // "package-lock.json",
     // "package.json",
-    // "models/Post.js",
+    // "controllers/userController.js",
+    // "router.js",
+    "views/single-post-screen.ejs",
+    "models/Post.js",
+    "models/User.js",
     "zgit.js"
 ]
 
