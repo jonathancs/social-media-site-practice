@@ -1,4 +1,4 @@
-let comentarioGit = "8. Performing a Lookup in MongoDB (Part 2) - concluindo parte que havia esquecido"
+let comentarioGit = "10. View Posts by Author"
 
 let arquivosAlterados = [
     // "views/includes/header.ejs",
@@ -7,11 +7,12 @@ let arquivosAlterados = [
     // "views/404.ejs",
     // "package-lock.json",
     // "package.json",
-    // "controllers/userController.js",
     // "router.js",
-    "views/single-post-screen.ejs",
+    // "views/single-post-screen.ejs",
+    // "models/User.js",
+    "views/profile.ejs",
     "models/Post.js",
-    "models/User.js",
+    "controllers/userController.js",
     "zgit.js"
 ]
 
