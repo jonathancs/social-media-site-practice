@@ -1,0 +1,12 @@
+este é um projeto contido no curso de Brad Schiff sobre Javascript Fullstack (com node).
+
+a ideia era realmente ser um projeto complexo e organizado.
+
+o front do projeto foi dado pronto, pois o foco do curso era o Javascript.
+
+neste projeto pude:
+
+validar a criação de usuário com o pacote validator.
+cadastrar as informações validadas no banco de dados MongoDB.
+validar quando usuários já cadastrados logavam novamente.
+criar o router que direciona as chamadas às páginas.
